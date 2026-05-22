@@ -1,7 +1,7 @@
 version: 2
 
 models:
-    - name: bronze_dim_store
+    - name: bronze_dim_store # Must match the name of the model file (without .sql) and including the case-sensitivity .
       config: 
         materialized: view
 
@@ -18,12 +18,10 @@ models:
         - name: gross_amount
           data_tests:
               - generic_non_negative 
-    - name: bronze_dim_store
-      columns:
-        - name: country
+        - name: payment_method
           data_tests:
             - accepted_values:
                 arguments:
-                  values: ['USA', 'Canada']
+                  values: ['Cash', 'Digital Wallet','Card','Gift Card']
                 config:
                   severity: warn

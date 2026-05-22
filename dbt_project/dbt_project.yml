@@ -45,4 +45,4 @@ models:
 seeds:
   dbt_project:
     +schema: bronze
-    
+     
