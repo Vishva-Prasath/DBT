@@ -6,6 +6,14 @@ dbt_project:
       http_path: /sql/1.0/warehouses/df2f051f0aaabf98
       schema: default
       threads: 1
-      token: dapied93c773987c3ef3a9d39ccff11c0bed
+      token: dapifce44dcbed347b4486ad59749214c56a
+      type: databricks
+    prod:
+      catalog: dbt_prod
+      host: dbc-0f8bb96b-053e.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/df2f051f0aaabf98
+      schema: default
+      threads: 1
+      token: dapifce44dcbed347b4486ad59749214c56a
       type: databricks
   target: dev
